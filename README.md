@@ -44,8 +44,9 @@ require 'cinch'
 
 bot = Cinch::Bot.new do
   configure do |c|
-    c.server = "irc.freenode.org"
-    c.channels = ["#cinch-bots"]
+    c.server = "127.0.0.1"
+    c.nick = "System"
+    c.channels = ["#cinch-mud"]
   end
 
   on :message, "hello" do |m|
